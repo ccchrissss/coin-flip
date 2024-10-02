@@ -34,10 +34,15 @@ const server = http.createServer((req, res) => {
     //   console.log('tails')
     //  }
     let randomNum = Math.random()
+    let result = ''
 
     console.log('randomNum: ', randomNum)
 
-    randomNum < 0.5 ? console.log('heads') : console.log('tails')
+    randomNum < 0.5 ? result = 'heads' : result = 'tails'
+
+    console.log(`**** ${result} ****`)
+    
+    // console.log('heads') : console.log('tails')
     
   }
   // if (page == '/') {
@@ -115,3 +120,4 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(8000);
+console.log('Your server is now running on PORT 8000')
