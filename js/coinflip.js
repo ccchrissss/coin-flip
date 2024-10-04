@@ -1,4 +1,4 @@
-document.querySelector('#refresh-btn').addEventListener('click', refreshPage)
+document.querySelector('#coinflip-btn').addEventListener('click', refreshPage)
 
 function refreshPage() {
   window.location.reload()
